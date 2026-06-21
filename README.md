@@ -2,10 +2,6 @@
 
 A high-performance **Pearl (PRL)** proof-of-work miner for **NVIDIA and AMD (beta) GPUs**.
 
-No Python, CUDA toolkit, or PyTorch required **to run** — the CUDA runtime is bundled
-in pre-built releases. Just an NVIDIA driver and the standalone binary.
-Build it yourself or grab a pre-built release. See [License](#license) for dev-fee terms.
-
 > Mixed-GPU rigs are supported. Ampere/Ada cards run a fused int8 tensor-core kernel
 > (GEMM + in-mainloop transcript fold + tensor-core noise generation), bit-exact with
 > the Pascal DP4A path; Pascal cards run DP4A.
