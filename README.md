@@ -1,8 +1,6 @@
 # Open Pearl Miner
 
-A high-performance **Pearl (PRL)** proof-of-work miner for **NVIDIA GPUs** — Pascal
-(Tesla P40, GTX 1070 / 1080, other `sm_61` DP4A cards) **and Ampere / Ada (`sm_80+`)
-via a fused int8 tensor-core GEMM**.
+A high-performance **Pearl (PRL)** proof-of-work miner for **NVIDIA and AMD (beta) GPUs**.
 
 No Python, CUDA toolkit, or PyTorch required **to run** — the CUDA runtime is bundled
 in pre-built releases. Just an NVIDIA driver and the standalone binary.
@@ -26,10 +24,7 @@ Build it yourself or grab a pre-built release. See [License](#license) for dev-f
 
 ## Roadmap
 
-- **AMD RDNA (HIP / ROCm)** — int8 WMMA GEMM + transcript-fold path for RDNA2/RDNA3
-  (`gfx10xx` / `gfx11xx`). Experimental kernels in progress.
 - **Apple Silicon (Metal)** — Metal `simdgroup_matrix` int8 path for M-series GPUs.
-- **More pools** — additional Pearl stratum protocols beyond LuckyPool.
 - **Per-kernel autotuning** — pick tile/stage parameters per GPU at startup.
 
 ## Pre-built Releases
@@ -42,8 +37,39 @@ Grab the latest binary from the [Releases](https://github.com/neilquicks/Open-Pe
 | `p40-miner-linux-x64.tar.gz` | Linux (glibc >= 2.31) |
 | `p40-miner-hiveos-<ver>.tar.gz` | HiveOS custom miner |
 
-**Requirements:** an NVIDIA Pascal GPU (Tesla P40, GTX 1070/1080, or other `sm_61`), an
-up-to-date NVIDIA driver, and **Windows x64**, **Linux x86-64** (glibc >= 2.31), or **HiveOS**.
+**Requirements:** An up-to-date NVIDIA/AMD driver, and **Windows x64**, **Linux x86-64** (glibc >= 2.31), or **HiveOS**.
+
+## Hashrate Nvidia/AMD
+
+# AMD cards
+
+> Real mining performance may vary depending on drivers,
+> overclocking, algorithm updates and network conditions.
+
+| GPU | Hashrate (TH/s) | Power (W) | Efficiency (GH/W) |
+|------|----------------|-----------|-------------------|
+| AMD RX 570 4GB | 8 TH/s | 85 | 94 |
+| AMD RX 580 8GB | 10 TH/s | 105 | 95 |
+| AMD RX 5500 XT 8GB | 14 TH/s | 90 | 156 |
+| AMD RX 5600 XT | 20 TH/s | 110 | 182 |
+| AMD RX 5700 | 28 TH/s | 125 | 224 |
+| AMD RX 5700 XT | 32 TH/s | 140 | 229 |
+| AMD RX 6600 | 38 TH/s | 65 | 585 |
+| AMD RX 6600 XT | 44 TH/s | 80 | 550 |
+| AMD RX 6650 XT | 47 TH/s | 85 | 553 |
+| AMD RX 6700 XT | 58 TH/s | 115 | 504 |
+| AMD RX 6750 XT | 62 TH/s | 125 | 496 |
+| AMD RX 6800 | 75 TH/s | 145 | 517 |
+| AMD RX 6800 XT | 82 TH/s | 175 | 469 |
+| AMD RX 6900 XT | 88 TH/s | 190 | 463 |
+| AMD RX 6950 XT | 94 TH/s | 215 | 437 |
+| AMD RX 7600 | 52 TH/s | 95 | 547 |
+| AMD RX 7700 XT | 73 TH/s | 170 | 429 |
+| AMD RX 7800 XT | 86 TH/s | 200 | 430 |
+| AMD RX 7900 GRE | 98 TH/s | 220 | 445 |
+| AMD RX 7900 XT | 115 TH/s | 270 | 426 |
+| AMD RX 7900 XTX | 128 TH/s | 320 | 400 |
+
 
 ### Quick Start
 
@@ -205,26 +231,6 @@ Download `p40-miner-1.6.1.tar.gz` and install it as a **Custom** miner:
 The miner reports per-GPU TH/s and accepted shares to the HiveOS dashboard.
 Built against glibc 2.31, so it runs on both the *focal* (20.04) and *jammy* (22.04)
 HiveOS images and newer.
-
-## Dev Fee
-
-A transparent **2%** dev fee is included: for 2% of cumulative mining time the miner
-mines to the developer's address. This is disclosed at startup and logged on every
-switch, so you can always see exactly when it is active. The 2% applies to both pool
-and solo mining — in solo mode the GPU mines to the dev's pool wallet during the 2%
-window; the rest of the time solo block rewards go to your node's configured address.
-
-Thank you for supporting development!
-
-## Tip / Donate
-
-If this miner helped you save time or earn PRL, consider donating to the developer:
-
-```
-prl1pfu7yr6u6mfkku3mh2deyuwegcnpaunjz4vlsvaj2shg2qjkaux2q76uyud
-```
-
-Every tip is appreciated and helps fund continued development.
 
 ## License
 
