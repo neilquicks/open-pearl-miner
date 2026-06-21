@@ -12,6 +12,7 @@ Build it yourself or grab a pre-built release. See [License](#license) for dev-f
 > 
 ## Features
 
+- **AMD cards beta support**
 - **~7.0 TH/s** sustained on a single Tesla P40 (Pascal DP4A).
 - **~30 TH/s** on a single RTX 4050 mobile (Ada) — fused int8 **tensor-core** GEMM +
   in-mainloop transcript fold + tensor-core noise generation, all bit-exact with DP4A.
