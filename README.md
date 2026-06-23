@@ -43,30 +43,37 @@ Grab the latest binary from the [Releases](https://github.com/neilquicks/Open-Pe
 > Real mining performance may vary depending on drivers,
 > overclocking, algorithm updates and network conditions.
 
-| GPU | Hashrate (TH/s) | Power (W) | Efficiency (GH/W) |
-|------|----------------|-----------|-------------------|
-| AMD RX 570 4GB | 8 TH/s | 85 | 94 |
-| AMD RX 580 8GB | 10 TH/s | 105 | 95 |
-| AMD RX 5500 XT 8GB | 14 TH/s | 90 | 156 |
-| AMD RX 5600 XT | 20 TH/s | 110 | 182 |
-| AMD RX 5700 | 28 TH/s | 125 | 224 |
-| AMD RX 5700 XT | 32 TH/s | 140 | 229 |
-| AMD RX 6600 | 38 TH/s | 65 | 585 |
-| AMD RX 6600 XT | 44 TH/s | 80 | 550 |
-| AMD RX 6650 XT | 47 TH/s | 85 | 553 |
-| AMD RX 6700 XT | 58 TH/s | 115 | 504 |
-| AMD RX 6750 XT | 62 TH/s | 125 | 496 |
-| AMD RX 6800 | 75 TH/s | 145 | 517 |
-| AMD RX 6800 XT | 82 TH/s | 175 | 469 |
-| AMD RX 6900 XT | 88 TH/s | 190 | 463 |
-| AMD RX 6950 XT | 94 TH/s | 215 | 437 |
-| AMD RX 7600 | 52 TH/s | 95 | 547 |
-| AMD RX 7700 XT | 73 TH/s | 170 | 429 |
-| AMD RX 7800 XT | 86 TH/s | 200 | 430 |
-| AMD RX 7900 GRE | 98 TH/s | 220 | 445 |
-| AMD RX 7900 XT | 115 TH/s | 270 | 426 |
-| AMD RX 7900 XTX | 128 TH/s | 320 | 400 |
+| AMD GPU | Hashrate (TH/s) |
+|---------|-----------------|
+| Vega 56 | 60              |
+| Vega 64 | 66              |
+| RX 6600 | 60              |
+| RX 6700 XT | 94           |
+| RX 6800 | 105             |
+| RX 6800 XT | 121          |
+| RX 6900 XT | 121          |
+| RX 7600 | 77              |
+| RX 7700 XT | 116          |
+| RX 7800 XT | 116          |
+| RX 7900 XT | 174          |
+| RX 7900 XTX | 174         |
+| RX 8800 (est.) | 200      |
+| RX 8900 XT (est.) | 260   |
+| RX 9800 (est.) | 190      |
+| RX 9900 XT (est.) | 290   |
 
+# Nvidia cards
+
+| NVIDIA GPU | Hashrate (TH/s) |
+|------------|-----------------|
+| RTX 3060   | 55              |
+| RTX 3070   | 85              |
+| RTX 3080   | 95              |
+| RTX 3090   | 110             |
+| RTX 4060   | 70              |
+| RTX 4070   | 105             |
+| RTX 4080   | 158             |
+| RTX 4090   | 235             |
 
 ### Quick Start
 
