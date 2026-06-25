@@ -1,4 +1,4 @@
-# Open Pearl Miner
+# Open Pearl Miner (Nvidia/AMD)
 
 A high-performance **Pearl (PRL)** proof-of-work miner for **NVIDIA and AMD (beta) GPUs**.
 
