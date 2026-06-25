@@ -45,22 +45,22 @@ Grab the latest binary from the [Releases](https://github.com/neilquicks/Open-Pe
 
 | AMD GPU | Hashrate (TH/s) |
 |---------|-----------------|
-| Vega 56 | 60              |
-| Vega 64 | 66              |
+| Vega 56 | 32              |
+| Vega 64 | 38              |
 | RX 6600 | 60              |
 | RX 6700 XT | 94           |
 | RX 6800 | 105             |
 | RX 6800 XT | 121          |
 | RX 6900 XT | 121          |
-| RX 7600 | 77              |
+| RX 7600 | 100              |
 | RX 7700 XT | 116          |
 | RX 7800 XT | 116          |
-| RX 7900 XT | 174          |
-| RX 7900 XTX | 174         |
-| RX 8800 (est.) | 200      |
-| RX 8900 XT (est.) | 260   |
-| RX 9800 (est.) | 190      |
-| RX 9900 XT (est.) | 290   |
+| RX 7900 XT | 139          |
+| RX 7900 XTX | 151        |
+| RX 8800 (est.) | 153      |
+| RX 8900 XT (est.) | 155   |
+| RX 9800 (est.) | 160      |
+| RX 9900 XT (est.) | 220   |
 
 # Nvidia cards
 
